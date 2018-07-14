@@ -86,13 +86,18 @@ nav {
 
 .logOut {
     height: 79px;   
-    font-size: 15px !important;
-    font-family: serif;
+    /* font-size: 15px !important; */
+    /* font-family: serif; */
     background: none;
     border: none;
     text-align: center;
     color: #fff;
     padding: 17px;
+    height: 6.8vh;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline-flex;
 }
 
 .logOut:hover{
