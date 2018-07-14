@@ -23,7 +23,7 @@
                     </script>
                 </header>
                 <fieldset>
-                        <h1 id="TituloForm" onmouseover="funmouseover(this)" onmouseout="funmouseout(this)">Regristro</h1>
+                        <h1 id="TituloForm" onmouseover="funmouseover(this)" onmouseout="funmouseout(this)">Registro</h1>
                     <form name='formjs' method='get' action='' onsubmit='return validarform();'>
                         <br>
                         <b>Nombre: </b>
@@ -44,12 +44,6 @@
 
                         <br>
                         <br>
-                        <b>Repite el Correo: </b>
-                        <input size="20" input type='email' name='txtcorreo2'>
-                        <span id='errorCorre2' class='error'>Repite tu Correo</span>
-
-                        <br>
-                        <br>
                         <b>Nombre De Usuario: </b>
                         <input size="25" maxlength="15" type='text' name='txtusuario' onkeypress='funtecla(this)'>
                         <span id='errorNom' class='error'>Ingresa tu Nombre de Usuario</span>
@@ -58,6 +52,11 @@
                         <br>
                         <b>Contraseña: </b>
                         <input size="25" maxlength="20" type="number" name="txtcontraseña">
+
+                        <br>
+                        <br>
+                        <b>Repite la Contraseña: </b>
+                        <input size="25" maxlength="20" type="number" name="txtcontraseñaRep">
 
                         <br>
                         <br>
