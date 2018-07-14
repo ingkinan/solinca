@@ -22,6 +22,9 @@
 </head>
 
 <body>
+    <?php 
+        include_once("encabezado.php");
+    ?>
     <header class="navbar navbar-default navbar-fixed-top" id="banner">
 
         <div class="row" style="background:transparent;">

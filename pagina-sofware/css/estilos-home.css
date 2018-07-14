@@ -117,7 +117,12 @@ nav {
     display: flex;
     align-items: center;
     font-size: 30px;
-    font-family: serif;
+    /* font-family: serif; */
+    /* height: 6.8vh; */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline-flex;
 }
 
 .CI:hover{
@@ -128,7 +133,12 @@ nav {
     display: flex;
     align-items: center;
     font-size: 30px;
-    font-family: serif;
+    /* font-family: serif; */
+    /* height: 6.8vh; */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline-flex;
 }
 
 .RI {
