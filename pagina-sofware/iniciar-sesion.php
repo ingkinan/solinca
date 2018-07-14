@@ -80,7 +80,7 @@
                 
                 if($pass == $passbd){
                     $_SESSION['user'] = $user;
-                    $_SESSION['permisos'] = $fila['permisos'];
+                    $_SESSION['permisos'] = $fila['permiso'];
                     header("Location: home.php");
                 } else {
                    echo "  <div class='container'>

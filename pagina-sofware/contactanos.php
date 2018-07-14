@@ -25,67 +25,7 @@
     <?php 
         include_once("encabezado.php");
     ?>
-    <header class="navbar navbar-default navbar-fixed-top" id="banner">
-
-        <div class="row" style="background:transparent;">
-            <div class="container">
-                <a class="scrollable" href="home.php">
-                    <img src="imagenes/solinca-logo-160.png" alt="Solinca" title="Solinca" />
-                     <?php if(isset($_SESSION['user'])){
-                            echo "<a class='scrollablepage-scroll logistic-brand-logo CI'>".$_SESSION['user']."|</a>";
-                         }
-                        ?>
-                </a>
-                       
-                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-                <nav class="collapse navbar-collapse" id="navbar" role="navigation" style="padding-top: 20px; font-size:10px;">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="scrollable" href="productos.php">Productos</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="scrollable" href="consulta.php">Consultas</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="scrollable" href="cotizaciones.php">Cotizaciones</a>
-                        </li>
-                 
-                        <li class="nav-item">
-                            <a class="scrollable" href="contactanos.php">Contactanos</a>
-                        </li>
-                  
-                        <!-- <li class="nav-item">
-                            <a class="scrollable" href="login.html">INICIAR SESIÓN</a>
-                        </li> -->
-                   
-                   
-                        <li class="nav-item" style="font-size: 10px;">
-                        <?php if(isset($_SESSION['user'])){
-                      // $_SESSION['user'] = $_POST['user'];
-                            echo "
-                            <form action='cerrar-sesion.php' method='post'>
-                            <a class='page-scroll nav-item-custom '> 
-                              <input class='page-scroll input-custom logOut' type='submit' value='LogOut'>
-                            </a>
-                          </form>
-                          ";
-                         }else{
-                            echo "<a class='navbar-brand page-scroll logistic-brand-logo' href='login.html' style:'height: 58px;'>iniciar sesión</a>";
-                         }
-                        ?>
-                        </li>
-              </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+  
     <body>
         
     </body>
