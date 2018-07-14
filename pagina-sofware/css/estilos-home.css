@@ -99,14 +99,14 @@ nav {
     letter-spacing: 2px;
     display: inline-flex;
 }
-
+/* 
 .logOut:hover{
     color: #ffff !important;
     /* background: rgba(255, 255, 255, 0.645) !important; */
     /* border-radius: 50% !important; */
     /* box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.1) !important; */
     border-bottom: 2px solid #ffff;
-    font-size: 10px;
+    font-size: 10px; */
 }
 
 .CI {
