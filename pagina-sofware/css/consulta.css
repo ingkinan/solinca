@@ -227,8 +227,8 @@ nav {
 
 .btn-info {
     color: #fff;
-    background-color: #5bc0de;
-    border-color: #46b8da;
+    background-color: linear-gradient(to top, #000000,#31d4c7);;
+    border-color: #31d4c7;
 }
 
 
