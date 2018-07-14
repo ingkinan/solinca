@@ -1,0 +1,35 @@
+body {
+    height: 100vh; 
+    overflow: hidden;
+    width: 99%;
+    text-align: center;
+    color: black; 
+    font-family: arial;
+    font-size: large; 
+    background: linear-gradient(to top, #000000,#31d4c7);
+}
+
+fieldset {
+    background-color: #ffffff;
+    border-color: 2px double #000000;
+}
+
+#caja1 {
+	width: auto;
+	min-height: auto;
+	margin: 5px 15px 5px 15px ;
+	padding:10px 10px 5px 10px;
+	border: 0px solid #C0C0C0;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+
+}
+
+.error {
+	background: transparent !important; 
+	color: rgb(255, 0, 0);
+	font-style: italic;
+	font-size: 10px;
+	visibility: hidden;
+}

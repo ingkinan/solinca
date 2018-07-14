@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- el titulo a la pestaña -->
+    <title> Registro de Usuario </title>
+    <link rel="stylesheet" href="css/estilos-regristro.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome/font-awesome.css"> -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validacion-login.js"></script>
+</head>
+
+<body>
+    <section id="area_principal">
+        <div id="caja1">
+            <article>
+                <header>
+                    <script>
+                        document.getElementById("TituloForm").addEventListener("click", funclicktitulo);
+                    </script>
+                </header>
+                <fieldset>
+                        <h1 id="TituloForm" onmouseover="funmouseover(this)" onmouseout="funmouseout(this)">Regristro</h1>
+                    <form name='formjs' method='get' action='' onsubmit='return validarform();'>
+                        <br>
+                        <b>Nombre: </b>
+                        <input size="25" maxlength="15" type='text' name='txtnombre' onkeypress='funtecla(this)'>
+                        <span id='errorNom' class='error'>Ingresa tu Nombre</span>
+
+                        <br>
+                        <br>
+                        <b>Apellido: </b>
+                        <input size="25" maxlength="15" type='text' name='txtapellido'>
+                        <span id='errorApe' class='error'>Ingresa tu Apellido</span>
+
+                        <br>
+                        <br>
+                        <b> Correo: </b>
+                        <input size="20" type='email' name='txtcorre1'>
+                        <span id='errorCorre1' class='error'>Ingresa tu Correo</span>
+
+                        <br>
+                        <br>
+                        <b>Repite el Correo: </b>
+                        <input size="20" input type='email' name='txtcorreo2'>
+                        <span id='errorCorre2' class='error'>Repite tu Correo</span>
+
+                        <br>
+                        <br>
+                        <b>Nombre De Usuario: </b>
+                        <input size="25" maxlength="15" type='text' name='txtusuario' onkeypress='funtecla(this)'>
+                        <span id='errorNom' class='error'>Ingresa tu Nombre de Usuario</span>
+
+                        <br>
+                        <br>
+                        <b>Contraseña: </b>
+                        <input size="25" maxlength="20" type="number" name="txtcontraseña">
+
+                        <br>
+                        <br>
+                        <b>Numero de telefono: </b>
+                        <select id='NumeoDeTelefono'>
+                        <input size="25" maxlength="15" name='txttelefono' onkeypress='funtecla(this)' type='number'>
+                        </select>
+                        <span id='errorEst' class='error'>Campo requerido</span>
+
+                        <br>
+                        <br>
+                        <b>Genero: </b>
+                        <input type="radio" name="sexo" value="M">Masculino
+                        <input type="radio" name="sexo" value="F">Femenino
+                        <span id='errorSexo' class='error'>Seleccion su genero</span>
+
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-8">
+                                <button type="submit" class="btn btn-primary">Registrar</button>
+                            </div>
+                        </div>
+                    </form>
+                    </form>
+                    <br>
+                    <br>
+                </fieldset>
+                <script>
+
+                </script>
+            </article>
+
+            <article>
+            </article>
+        </div>
+    </section>
+</body>
+
+</html>
