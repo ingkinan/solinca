@@ -32,9 +32,9 @@
                 <div style="height: 100%;width: 100%;display: flex;justify-content: center;align-items: center;flex-direction: column;">
                     <div style="width:60%; height:60%;display: flex;justify-content: end;align-items: center;flex-direction: column; background:#fff;">
                         <div style="width: 100%;height: 15%;display: flex;background: #41adce;color: #fff;">
-                            <h1 style="font-size: 20px;letter-spacing: 2px;">CONSULTAS DE PRODUCTOS</h1>
+                            <h1 style="font-size: 20px;letter-spacing: 2px;padding-left: 10px;padding-top: 5px;margin-top: 0px !important;margin-bottom: 0px !important;">CONSULTAS</h1>
                         </div>
-                        <div>
+                        <div style="width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;flex-direction: column;">
                             <input type="text" style="width: 50%;height: 38px;">
                             <label style="font-size: 15px;letter-spacing: 2px;"> Imprimir Reporte </label>
                             <button type="buttom" class="btn btn-info" style="width: 140px;height: 38px;font-size: 12px;letter-spacing: 2px;">Exportar</button>
