@@ -37,26 +37,65 @@
                 </button>
                         <nav class="collapse navbar-collapse" id="navbar" role="navigation" style="padding-top: 20px; font-size:10px;">
                             <ul class="navbar-nav">
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="scrollable" href="productos.php">Productos</a>
                                 </li>
         
                                 <li class="nav-item">
                                     <a class="scrollable" href="consulta.php">Consultas</a>
-                                </li>
+                                </li> -->
         
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="scrollable" href="cotizaciones.php">Cotizaciones</a>
-                                </li>
+                                </li> -->
                          
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
+                                    <a class="scrollable" href="contactanos.php">Contactanos</a>
+                                </li> -->
+                          
+                                <?php 
+                                // echo "HOLA";
+                                if(isset($_SESSION['user']) && (isset($_SESSION['permisos'])) ){
+                                    // echo "HOLA";
+                                    if($_SESSION['permisos'] == 1){
+                                        echo "
+                                        <li class='nav-item'>
+                                          <a class='scrollable' href='productos.php'>Productos</a>
+                                        </li>
+
+                                        <li class='nav-item'>
+                                          <a class='scrollable' href='consulta.php'>Consultas</a>
+                                        </li>
+
+                                        <li class='nav-item'>
+                                          <a class='scrollable' href='cotizaciones.php'>Cotizaciones</a>
+                                        </li>
+
+                                        <li class='nav-item'>
+                                          <a class='scrollable' href='registrar.html'>Registrar</a>
+                                        </li>
+                                      ";
+                                    }else{
+                                        echo "
+                                        <li class='nav-item'>
+                                          <a class='scrollable' href='productos.php'>Productos</a>
+                                        </li>
+
+                                        <li class='nav-item'>
+                                          <a class='scrollable' href='consulta.php'>Consultas</a>
+                                        </li>
+
+                                      ";
+                                    }
+                                    
+                                 }else{
+                                    // echo "<a class='navbar-brand page-scroll logistic-brand-logo' href='login.html' style:'height: 58px;'>iniciar sesión</a>";
+                                 }
+                                ?>
+                           
+                           <li class="nav-item">
                                     <a class="scrollable" href="contactanos.php">Contactanos</a>
                                 </li>
-                          
-                                <!-- <li class="nav-item">
-                                    <a class="scrollable" href="login.html">INICIAR SESIÓN</a>
-                                </li> -->
-                           
                            
                                 <li class="nav-item" style="font-size: 10px;">
                                 <?php if(isset($_SESSION['user'])){
