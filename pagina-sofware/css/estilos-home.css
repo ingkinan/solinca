@@ -85,7 +85,7 @@ nav {
 }
 
 .logOut {
-    height: 79px;   
+    height: 79px;
     /* font-size: 15px !important; */
     /* font-family: serif; */
     background: none;
@@ -99,7 +99,8 @@ nav {
     letter-spacing: 2px;
     display: inline-flex;
 }
- 
+
+
 /* .logOut:hover{
     color: #ffff !important;
     background: rgba(255, 255, 255, 0.645) !important;
@@ -117,10 +118,15 @@ nav {
     display: flex;
     align-items: center;
     font-size: 30px;
-    font-family: serif;
+    /* font-family: serif; */
+    /* height: 6.8vh; */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline-flex;
 }
 
-.CI:hover{
+.CI:hover {
     /* width: 50%; */
     height: 70px;
     color: #fff;
@@ -128,15 +134,21 @@ nav {
     display: flex;
     align-items: center;
     font-size: 30px;
-    font-family: serif;
+    /* font-family: serif; */
+    /* height: 6.8vh; */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline-flex;
 }
 
 .RI {
     width: 100%;
-    height: 34vh;   
+    height: 34vh;
 }
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
     background: transparent;
 }
 
@@ -221,6 +233,11 @@ nav {
 .Icon img {
     width: 50%;
     margin-left: 50px;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 
