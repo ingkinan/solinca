@@ -53,8 +53,89 @@
         <!-- </div> -->
     </div>
 </form>
+
+<div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered" id='grilla'>
+            <thead>
+            <tr class="info">
+                <th>Numero Cotizacion</th>
+                <th>Fecha Cotizacion</th>
+                <th>Usuario</th>
+                <th>Monto Total</th>
+                <th>Nota</th>
+            
+             
+            </tr>
+            </thead>
+            <tbody id='data'>
+            <?php
+            while ($rs = mysqli_fetch_array($queryDiaVisita)) {
+                echo "<tr>";
+                echo 
+               "<td>" . $rs["numero_Cotizacion"] . "</td>
+                <td>" . $rs["fecha_Cotizacion"] . "</td>
+                <td>" . $rs["usuario"] . "</td>
+                <td>" . $rs["monto_cotizacion"] . "</td>
+                <td>" . $rs["nota"] . "</td>";
+                echo "</tr>";
+            }
+
+            ?>
+            </tbody>
+        </table>
+    </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $("#filtro_Doctor").click(function (e) {
+            e.preventDefault();
+
+            $("#data").empty();  // vaciamos las lineas del cuerpo de la tabla
+
+            var Iddoctor = $("#Doctor").val();
+            var Fecha = $("#Fecha").val();
+
+            $.ajax({
+                url: "filtrar_doctor.php",
+                type: "post",
+                data: {
+                    iddoctor: Iddoctor,
+                    idfecha: Fecha
+                },
+                dataType: "json"
+            }).done(
+                function (data) {
+                  if(data){
+                    console.log("Exito Done en Cambio 111");
+                    for (var i = 0; i < data.length; i++) {
+                        $("#data").append("<tr><td>"
+                        + data[i]['Nombre del paciente'] + "</td><td>" 
+                        + data[i]['Cedula'] + "</td><td>" 
+                        + data[i]['telefono'] + "</td><td>" 
+                        + data[i]['correo'] + "</td><td>"
+                        + data[i]['Fecha'] + "</td><td>"
+                        + data[i]['nombre_servicio'] + "</td><td>"
+                        + data[i]['Nombre del Doctor'] + "</td></tr>");
+                    }
+                  }else{
+                    alert("No se a encontrado nunca cita en este dia con este doctor");
+                    
+                  }
+                  
+                }
+            ).fail(
+                function (error) {
+
+                }
+            );
+
+        });
+    });
+
+    </script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- <script src="js/bootstrap.min.js"></script> -->
