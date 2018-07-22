@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-07-2018 a las 22:01:35
+-- Tiempo de generación: 23-07-2018 a las 01:38:02
 -- Versión del servidor: 10.1.30-MariaDB
 -- Versión de PHP: 7.2.2
 
@@ -32,6 +32,16 @@ CREATE TABLE `almacenes` (
   `id_Almacen` int(11) NOT NULL,
   `capacidad_Almacen` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `almacenes`
+--
+
+INSERT INTO `almacenes` (`id_Almacen`, `capacidad_Almacen`) VALUES
+(1, 500),
+(2, 300),
+(3, 1000),
+(4, 900);
 
 -- --------------------------------------------------------
 
@@ -75,10 +85,24 @@ INSERT INTO `cotizaciones` (`numero_Cotizacion`, `fecha_Cotizacion`, `usuario`, 
 CREATE TABLE `productos` (
   `id_Producto` int(11) NOT NULL,
   `descripcion_Producto` varchar(50) NOT NULL,
-  `almacen` int(11) NOT NULL,
   `fecha_Registro` date NOT NULL,
-  `fecha_Recibimiento` int(11) NOT NULL
+  `fecha_Recibimiento` int(11) NOT NULL,
+  `id_Almacen` int(11) NOT NULL,
+  `Costo` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `productos`
+--
+
+INSERT INTO `productos` (`id_Producto`, `descripcion_Producto`, `fecha_Registro`, `fecha_Recibimiento`, `id_Almacen`, `Costo`) VALUES
+(1, 'piezas de lavadora', '2018-07-22', 0, 0, 0),
+(2, 'piezas de lavadora', '2018-07-22', 0, 0, 0),
+(3, 'lavadoras', '2018-07-23', 0, 2, 200),
+(4, 'Etiquetadoras', '2018-07-23', 0, 3, 134),
+(5, 'Etiquetadoras', '2018-07-23', 0, 3, 134),
+(6, 'AccesoriosLineas', '2018-07-23', 0, 2, 20),
+(7, 'AccesoriosLineas', '2018-07-23', 0, 2, 20);
 
 -- --------------------------------------------------------
 
@@ -168,7 +192,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `almacenes`
 --
 ALTER TABLE `almacenes`
-  MODIFY `id_Almacen` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_Almacen` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `almacen_producto`
@@ -186,7 +210,7 @@ ALTER TABLE `cotizaciones`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id_Producto` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_Producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `product_coti`
