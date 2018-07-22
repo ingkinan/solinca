@@ -14,7 +14,7 @@ fieldset{
     align-items: center;
     /* background-color: rgba(0, 0, 0, 0.336); */
     width: 40%;
-    height: 100%;
+    height: auto;
     border: none; 
     /* border-color: rgb(255, 255, 255); */
     /* border-radius: 10px; */
@@ -57,7 +57,7 @@ form{
     letter-spacing: 2px;
 }
 .botoniniciar:hover{
-    color: rgba(204, 204, 204, 0.816);;
+    color: #fff;
     border-color: #ffffff;
     background-color: #2a807a;
     cursor: pointer;

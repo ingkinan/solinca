@@ -7,18 +7,6 @@
     outline: 0px;
 }
 
-.textArea-contact {
-    width: 350px;
-    height: 130px;
-    max-width: 100%;
-    max-height: 130px;
-    min-width: 100%;
-    min-height: 130px;
-    padding-left: 5px;
-    border: 1px solid #ccc;
-    outline: 0px !important;
-}
-
 .btn-info {
     color: #fff;
     background-color: #2a807a !important;
@@ -34,7 +22,7 @@
 
 .btn-info:active:hover, .btn-info.active:hover, .open > .dropdown-toggle.btn-info:hover, .btn-info:active:focus, .btn-info.active:focus, .open > .dropdown-toggle.btn-info:focus, .btn-info:active.focus, .btn-info.active.focus, .open > .dropdown-toggle.btn-info.focus {
     color: #fff;
-    background-color: #2a807a !important;
+    background-color: #269abc !important;
     border-color: #2a807a;
     outline: 0px !important;
 }

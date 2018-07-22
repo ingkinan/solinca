@@ -27,12 +27,13 @@
 <form action="send.php" method="post">
     <div class="row" style='width:100vw; height:100vh; background: #ccc;'>
         <!-- <div class="col-12" style='width:100%; height:100%;'> -->
-             <div class="col-12" style='width:100%; height:100%;display: flex;justify-content: center;align-items: center;padding-left: 10%;padding-right: 10%;padding-bottom: 3%;padding-top: 10%;'>
-                <div class="col-12" style='width: 100%; height: 100%;background: #fff;display: flex;justify-content: center;align-items: center;flex-direction: column;text-align: center;'>
-                    <div class="col-6" style='width: 100%;height: 111px;'>
-                        <h2>Contactanos</h2>
+             <div class="col-12" style='width:100%; height:100%;display: flex;justify-content: center;align-items: center;'>
+                <div class="col-12" style='width: 65%; height: 70%;background: #fff;display: flex;justify-content: center;align-items: center;flex-direction: column;text-align: center;'>
+                    <div class="col-6" style='width: 100%;height: 90px; background: #2a807a;color: #fff;display: flex;letter-spacing: 2px'>
+                        <h2 style='font-size: 20px;padding: 10px;'>Contactanos</h2>
                     </div>
-                    <div class="col-6">
+                    <br><br>
+                    <div class="col-6" style='width: 40%;height: 100%;'>
                         <div style='width: 100%;'>
                             <!-- <label>Nombre: </label> -->
                             <input type="text" name='nombre' placeholder='Nombre' class='input-contact' id="nombre completo"size="30" maxlength="100">
