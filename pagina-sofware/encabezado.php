@@ -56,15 +56,11 @@
                                 <?php 
                                 // echo "HOLA";
                                 if(isset($_SESSION['user']) && (isset($_SESSION['permisos'])) ){
-                                    // echo "HOLA";
+
                                     if($_SESSION['permisos'] == 1){
                                         echo "
                                         <li class='nav-item'>
-                                          <a class='scrollable' href='productos.php'>Productos</a>
-                                        </li>
-
-                                        <li class='nav-item'>
-                                          <a class='scrollable' href='consulta.php'>Consultas</a>
+                                          <a class='scrollable' href='Almacen.php'>Almacen</a>
                                         </li>
 
                                         <li class='nav-item'>
@@ -72,7 +68,11 @@
                                         </li>
 
                                         <li class='nav-item'>
-                                          <a class='scrollable' href='registrar.html'>Registrar</a>
+                                        <a class='scrollable' href='restablecer-pass.html'>Cambiar Contraseña</a>
+                                      </li>
+
+                                        <li class='nav-item'>
+                                          <a class='scrollable' href='registrar.php'>Registrar</a>
                                         </li>
                                       ";
                                     }else{
@@ -82,7 +82,7 @@
                                         </li>
 
                                         <li class='nav-item'>
-                                          <a class='scrollable' href='consulta.php'>Consultas</a>
+                                          <a class='scrollable' href='cotizaciones.php'>Cotizaciones</a>
                                         </li>
 
                                       ";
@@ -103,12 +103,12 @@
                                     echo "
                                     <form action='cerrar-sesion.php' method='post'>
                                     <a class='page-scroll nav-item-custom '> 
-                                      <input class='page-scroll input-custom logOut' type='submit' value='LogOut'>
+                                      <input class='page-scroll input-custom logOut' type='submit' value='Cerrar Sesion'>
                                     </a>
                                   </form>
                                   ";
                                  }else{
-                                    echo "<a class='navbar-brand page-scroll logistic-brand-logo' href='login.html' style:'height: 58px;'>iniciar sesión</a>";
+                                    echo "<a class='navbar-brand page-scroll logistic-brand-logo' href='login.html' style:'height: 58px;'>Iniciar Sesión</a>";
                                  }
                                 ?>
                                 </li>
