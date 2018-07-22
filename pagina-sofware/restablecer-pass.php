@@ -77,45 +77,40 @@
 </head>
 <body>
     <?php
-  
+   
             $user = $_POST['user'];
             $pass = $_POST['pass'];
-            $pass2 = $_POST['pass2'];
-            $permisos = 2;
             $correo = $_POST['correo'];
-            $telefono = $_POST['telefono'];
     
-            
-    if( $pass2 != $pass){
-       
-        echo "  <div class='container'>
-        <div class='error-container'>
-          <h1>Las Contraseñas tienen que Coincidir</h1><br>
-          <a href='registrar.php'>Regresar</a>
-        </div>
-      </div>";
+$querybusqueda = $mysqli->query("SELECT * from usuarios WHERE usuarios.username = '$user' AND usuarios.correo = '$correo'");
+$cantidad = $querybusqueda->num_rows;
 
-  }else{
-    $queryInsertar = $mysqli->query("INSERT INTO usuarios(username, pass, permiso, correo, telefono) VALUES 
-    ('$user', '$pass', $permisos, '$correo', '$telefono')");
-  
-    if($queryInsertar){
-               
-        echo "  <div class='container'>
-        <div class='error-container'>
-          <h1>Usuario registrado exitosamente</h1>
-          <a href='home.php'>Volver a la página principal</a>
-        </div>
-      </div>";
-    }else{
+while (($fila=mysqli_fetch_array($querybusqueda))){
+  // $username = $fila['username'];
+  // $correo = $fila['correo'];
+  $id = $fila['id_usuario'];
+  echo "
+  <tr>
+      <td>$id</td>";
+}
 
-        die('ERROR: No se puede ejecutar query para insertar datos. '. $mysqli->error);
-                    
-        echo "<br><br><br><a href='registrar.php'>Regresar</a><br><br>";
-    }
-    }
-           
-        // }
+
+if($cantidad === 0){
+  echo "  <div class='container'>
+  <div class='error-container'>
+    <h1>El Usuario o El Correo no Existe</h1>
+    <a href='restablecer-pass.html'>Volver a la página principal</a>
+  </div>
+</div>";
+}else{
+  $queryUpdate = $mysqli->query("UPDATE `usuarios` SET `pass` = '$pass' WHERE `usuarios`.`id_usuario` = $id");
+  echo "  <div class='container'>
+  <div class='error-container'>
+    <h1>La Contraseña se a Modificado Exitosamente</h1>
+    <a href='home.php'>Volver a la página principal</a>
+  </div>
+</div>";
+}
 
     ?>
 </body>

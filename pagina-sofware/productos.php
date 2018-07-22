@@ -15,8 +15,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="css/produc.css"> -->
     <link rel="stylesheet" href="css/font-awesome.css">
+    	<!-- JQuery -->
+	<!-- <script src="js/jquery-3.2.1.slim.min.js"></script> -->
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 </head>
@@ -54,20 +57,58 @@
                     <label>Soluciones adaptadas para cualquier linea de <br>
                     producción Compruebe nuestro gran stock de repuestos</label>
                     </div>
-                    <img src="imagenes/LAVADORAS.jpg" alt="Solinca" style="">
-                    <img src="imagenes/ETIQUETADORAS.jpg" alt="Solinca" style="padding-left:10px;">
-                    <img src="imagenes/LLENADORAS.jpg" alt="Solinca" style="padding-left:10px;">
-                    <img src="imagenes/PASTEURIZADORAS.jpg" alt="Solinca" style="padding-left:10px;">
-                    <img src="imagenes/Portada-Accesorios-de-Líneas.jpg" alt="Solinca" style="padding-top:20px;">
-                    <img src="imagenes/TRANSPORTE.jpg" alt="Solinca" style="padding-top:20px;padding-left:10px;">
-                    <img src="imagenes/Embaladores.jpg" alt="Solinca" style="padding-top:20px; padding-left:10px;">   
+                   <a class="nav-item nav-link font-weight-bold" href="#lavadoras"  data-toggle="modal" > 
+                       <img src="imagenes/LAVADORAS.jpg" alt="Solinca" style="">
+                   </a> 
+                    <img src="imagenes/ETIQUETADORAS.jpg" alt="Solinca"  id='etiqueta' data-toggle="modal" style="padding-left:10px;">
+                    <img src="imagenes/LLENADORAS.jpg" alt="Solinca" id='llenadoras' data-toggle="modal" style="padding-left:10px;">
+                    <img src="imagenes/PASTEURIZADORAS.jpg" alt="Solinca" id='pasteurizadoras' data-toggle="modal" style="padding-left:10px;">
+                    <img src="imagenes/Portada-Accesorios-de-Líneas.jpg" alt="Solinca" id='portada' data-toggle="modal" style="padding-top:20px;">
+                    <img src="imagenes/TRANSPORTE.jpg" alt="Solinca" id='transporte' data-toggle="modal" style="padding-top:20px;padding-left:10px;">
+                    <img src="imagenes/Embaladores.jpg" alt="Solinca"  id='embaladores' data-toggle="modal" style="padding-top:20px; padding-left:10px;">   
                </div>
            </div>
        </div>
     </body>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.3.1.min.js"></script>
 
+    <!-- modals -->
+	<div class="modal fade" id="lavadoras" tabindex="-1" role="dialog" aria-labelledby="Etiquetadoras" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<!-- Header de la ventana -->
+				<div class="modal-header">
+					<h5 class="modal-title" id="lavadoras">LAVADORAS</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<!-- Contenido de la ventana -->
+				<div class="modal-body">
+					<img src="imagenes/ETIQUETADORAS.jpg" class="img-fluid thum pull-left" style="width: 200px;height: 200px" alt="Imagen de HTML5"
+					 title="ETIQUTADORAS">
+					<br>
+					<span>
+                        Precio: 50$
+                    </span>
+				</div>
+				<!-- Footer de la ventana -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Comprar</button>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+        
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontawesome-all.min.js"></script>
+    <script src="js/jqfunciones.js"></script>
+
+<!-- jQuery -->
+<!-- <script src="js/fontawesome-all.min.js"></script> -->
+    <!-- <script src="js/jquery-3.2.1.slim.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- <script src="js/bootstrap.min.js"></script> -->
 </body>
