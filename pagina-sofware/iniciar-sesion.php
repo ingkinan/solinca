@@ -92,7 +92,7 @@
         while (($fila=mysqli_fetch_array($queryBuscar))){
             $userbd = $fila['username'];
             $passbd = $fila['pass'];
-            if($user == $userbd){
+            if($user === $userbd){
                 
                 if($pass == $passbd){
                     $_SESSION['user'] = $user;
@@ -101,12 +101,19 @@
                 } else {
                    echo "  <div class='container'>
             <div class='error-container'>
-              <h1>Contraseña Incorrecta  <br> ó <br> Usuario Invalido</h1><br><br>
+              <h1>Contraseña Incorrecta  <br></h1><br><br>
               <a href='login.html'>Volver a la página principal</a>
             </div>
           </div>";
                 }
-            } 
+            } else{
+              echo "  <div class='container'>
+              <div class='error-container'>
+                <h1><br> Usuario Invalido</h1><br><br>
+                <a href='login.html'>Volver a la página principal</a>
+              </div>
+            </div>";
+            }
           }
         //     else {
                 
