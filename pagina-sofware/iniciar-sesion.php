@@ -27,13 +27,17 @@
 
     .error-container{
       min-width: 300px;
-      width: 40%;
-      height: 250px;
-      background-color: rgb(22, 26, 64);
+      width: 50%;
+      height: 360px;
+      background-color: rgba(0, 0, 0, 0.47);
       display: flex;
       justify-content: center;
       border-radius: 5px;
       flex-direction: column;
+      letter-spacing: 2px;
+      font-size: 15px;
+      padding: 5px;
+      outline: 0px;
     }
 
     .error-container h1{
@@ -41,7 +45,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: white;
+      color: #fff;
       font-family: inherit;
       margin: 0;
     }
@@ -50,21 +54,33 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: white;
+      color: #fff;
       font-family: inherit;
     }
 
     .error-container a{
+      width: 100%;
+      height: 20%;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: white;
+      color: #fff;
       font-family: inherit;
+      text-decoration: none;
+    } 
+    .error-container a:hover{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #ccc;
+      font-family: inherit;
+      text-decoration: none;
     } 
 </style>
 </head>
-<body>
+<body style='width:100vw; height:100vh;background: linear-gradient(to top, #000000,#31d4c7);'>
     <?php
         $user = $_POST['user'];
         $pass = $_POST['pass'];
@@ -85,23 +101,25 @@
                 } else {
                    echo "  <div class='container'>
             <div class='error-container'>
-              <h1>CONTRASEÑA INCORRECTA</h1><br><br>
+              <h1>Contraseña Incorrecta  <br> ó <br> Usuario Invalido</h1><br><br>
               <a href='login.html'>Volver a la página principal</a>
             </div>
           </div>";
                 }
-            } else {
+            } 
+          }
+        //     else {
                 
-            }
-        }
+        //     }
+        // }
        
-            echo "  <div class='container'>
-            <div class='error-container'>
-              <h1>ERROR DE CONSULTA</h1>
-              <h3>El usuario no existe</h3>
-              <a href='login.html'>Volver a la página principal</a>
-            </div>
-          </div>";
+        //     echo "  <div class='container'>
+        //     <div class='error-container'>
+        //       <h1>ERROR DE CONSULTA</h1>
+        //       <h3>El usuario no existe</h3>
+        //       <a href='login.html'>Volver a la página principal</a>
+        //     </div>
+        //   </div>";
         
     ?>
 </body>

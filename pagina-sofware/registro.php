@@ -12,7 +12,7 @@
     <link rel="icon" href="imagenes/servicio3.png" type="image/x-ico">
 
       <!-- Estilos -->
-  <link rel="stylesheet" href="css/creative.css">
+  <link rel="stylesheet" href="css/estilos-login.css">
 
   <!-- Plugin CSS -->
   <link href="css/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -114,7 +114,7 @@
         echo "  <div class='container'>
         <div class='error-container'>
           <h1>Las Contraseñas tienen que Coincidir</h1><br>
-          <a href='registrar.html'>Regresar</a>
+          <a href='registrar.php'>Regresar</a>
         </div>
       </div>";
 
@@ -134,7 +134,7 @@
 
         die('ERROR: No se puede ejecutar query para insertar datos. '. $mysqli->error);
                     
-        echo "<br><br><br><a href='registrar.html'>Regresar</a><br><br>";
+        echo "<br><br><br><a href='registrar.php'>Regresar</a><br><br>";
     }
     }
            
