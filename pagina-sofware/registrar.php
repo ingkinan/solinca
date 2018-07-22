@@ -75,7 +75,7 @@
                         <span id='errorSexo' class='error'>Seleccion su genero</span> -->
                         
                             <strong>
-                                <input type="submit" value="Registrar" style="width: 150px; height:38px" class="btn btn botoniniciar">
+                                <input type="submit" value="Registrar" style="width: 60%; height:38px" class="btn btn botoniniciar">
                             </strong>
                             <br>
                             <br>
