@@ -12,7 +12,7 @@
     <link rel="icon" href="imagenes/servicio3.png" type="image/x-ico">
 
       <!-- Estilos -->
-  <link rel="stylesheet" href="css/creative.css">
+  <link rel="stylesheet" href="css/estilos-login.css">
 
   <!-- Plugin CSS -->
   <link href="css/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -77,30 +77,7 @@
 </head>
 <body>
     <?php
-        // if(!(isset($_POST['registrar']))){
-        //     echo "
-        //     <center>
-        //         <fieldset>
-        //             <legend>Registro de usuario: </legend>
-        //             <form action='' method='post'>
-        //                 <b>Nombre de Usuario: </b><input type='text' name='username' placeholder='Nombre de usuario'><br><br>
-        //                 <b>Contraseña: </b><input type='password' name='password' placeholder='Contraseña'><br><br>";
-        //                     if(isset($_SESSION['user'])){
-        //                         if($_SESSION['permisos'] == 1){
-        //                             echo "<b>Permisos: </b><select name='permisos'>
-        //                                     <option value=0>Usuario</option>
-        //                                     <option value=1>Administrador</option>
-        //                                 </select>";
-        //                         } else {
-        //                             echo "<input type='hidden' name='permisos' value=0>";
-        //                         }
-        //                     }
-        //                     echo "
-        //                 <input type='submit' value='Guardar' name='registrar' id='registrar'>
-        //             </form>
-        //         </fieldset>
-        //     </center>";
-        // } else {
+  
             $user = $_POST['user'];
             $pass = $_POST['pass'];
             $pass2 = $_POST['pass2'];
@@ -114,7 +91,7 @@
         echo "  <div class='container'>
         <div class='error-container'>
           <h1>Las Contraseñas tienen que Coincidir</h1><br>
-          <a href='registrar.html'>Regresar</a>
+          <a href='registrar.php'>Regresar</a>
         </div>
       </div>";
 
@@ -134,7 +111,7 @@
 
         die('ERROR: No se puede ejecutar query para insertar datos. '. $mysqli->error);
                     
-        echo "<br><br><br><a href='registrar.html'>Regresar</a><br><br>";
+        echo "<br><br><br><a href='registrar.php'>Regresar</a><br><br>";
     }
     }
            

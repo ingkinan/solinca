@@ -1,0 +1,20 @@
+
+.btn-info {
+    color: #fff;
+    background-color: #2a807a !important;
+    border-color: #269abc !important;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: #319992 !important;
+    border-color: #269abc;
+    outline: 0px !important;
+}
+
+.btn-info:active:hover, .btn-info.active:hover, .open > .dropdown-toggle.btn-info:hover, .btn-info:active:focus, .btn-info.active:focus, .open > .dropdown-toggle.btn-info:focus, .btn-info:active.focus, .btn-info.active.focus, .open > .dropdown-toggle.btn-info.focus {
+    color: #fff;
+    background-color: #2a807a !important;
+    border-color: #2a807a;
+    outline: 0px !important;
+}
