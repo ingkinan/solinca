@@ -27,6 +27,8 @@
     ?>
    
     <body>
+    <form action="registrar_productos.php" method="post" style=" display: flex !important; text-align: center;
+                        justify-content: center; flex-direction:column;">
         <div class="row" style="width: 100vw;height: 100vh;">
             <div class="col-md-12" style="width: 100%;height: 100%;background: #ccc;display: flex;justify-content: center;align-items: center;">
                 <div style="height: 100%;width: 100%;display: flex;justify-content: center;align-items: center;flex-direction: column;">
@@ -38,8 +40,8 @@
                             <div style="width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;flex-direction: column;">
                                 <h2 style='margin-top: 0px;'>Registrar Producto</h2>
                             <br>
-                                <select name="TipoProducto" id="" style='width: 25%;height: 38px;outline: 0px;border-radius: 5px;border: 1px solid #ccc;'>
-                                    <option value="productos">Productos</option>
+                                <select name="TipoProducto" id="" style='width: 25%;height: 38px;outline: 0px;border-radius: 5px;border: 1px solid #ccc;' required>
+                                    <option value="">Productos</option>
                                     <option value="lavadoras">Lavadoras</option>
                                     <option value="Etiquetadoras">Etiquetadoras</option>
                                     <option value="Llenadoras">Llenadoras</option>
@@ -49,17 +51,19 @@
                                     <option value="EmbaladoresDesembaladoras">Embaladores y Desembaladoras</option>
                                 </select>
                             <br>
-                                <select name="Alamacen" id="" style='width: 25%;height: 38px;outline: 0px;border-radius: 5px;border: 1px solid #ccc;'>
-                                    <option value="almacen">Almacen</option>
+                                <select name="Almacen" id="" style='width: 25%;height: 38px;outline: 0px;border-radius: 5px;border: 1px solid #ccc;' required>
+                                    <option value="">Almacen</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
                                 </select>
                             <br>
-                                <input type="number" placeholder='Costo' style="width: 25%;height: 38px; padding-left: 5px;outline: 0px;border-radius: 5px;border: 1px solid #ccc;">
+                                <input type="number" name="Costo" placeholder='Precio del Producto' style="width: 25%;height: 38px; padding-left: 5px;outline: 0px;border-radius: 5px;border: 1px solid #ccc;" required>
                             <br>
-                                <button type="buttom" class="btn btn-info" style="width: 25%;height: 38px;font-size: 12px;letter-spacing: 2px;">Registrar</button>
+                                  <input type="number" name="Cantidad" placeholder='Cantidad a Registrar' style="width: 25%;height: 38px; padding-left: 5px;outline: 0px;border-radius: 5px;border: 1px solid #ccc;" required>
+                            <br>
+                                <button type="submit" class="btn btn-info" style="width: 25%;height: 38px;font-size: 12px;letter-spacing: 2px;" disable="Almacen != 0">Registrar</button>
                             </div>
                             <!-- <label style="font-size: 15px;letter-spacing: 2px;"> Imprimir Reporte </label> -->
                         </div>
@@ -67,7 +71,7 @@
                 </div>
             </div>
         </div>
-        
+        </form>
     </body>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.3.1.min.js"></script>
