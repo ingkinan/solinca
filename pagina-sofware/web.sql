@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-07-2018 a las 05:00:39
+-- Tiempo de generación: 22-07-2018 a las 22:01:35
 -- Versión del servidor: 10.1.30-MariaDB
 -- Versión de PHP: 7.2.2
 
@@ -56,6 +56,15 @@ CREATE TABLE `cotizaciones` (
   `monto_Cotizacion` int(11) NOT NULL,
   `nota` varchar(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `cotizaciones`
+--
+
+INSERT INTO `cotizaciones` (`numero_Cotizacion`, `fecha_Cotizacion`, `usuario`, `monto_Cotizacion`, `nota`) VALUES
+(1, '2018-07-22', 4, 600, ''),
+(2, '2018-07-22', 4, 600, ''),
+(3, '2018-07-22', 2, 4550, '');
 
 -- --------------------------------------------------------
 
@@ -171,7 +180,7 @@ ALTER TABLE `almacen_producto`
 -- AUTO_INCREMENT de la tabla `cotizaciones`
 --
 ALTER TABLE `cotizaciones`
-  MODIFY `numero_Cotizacion` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `numero_Cotizacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `productos`

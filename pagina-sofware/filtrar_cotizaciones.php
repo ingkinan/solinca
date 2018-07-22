@@ -6,7 +6,7 @@
     $id_usuario = $_SESSION['id'];
 
     $idfecha = $_REQUEST['idfecha'];
-
+ 
  $Coti = "SELECT * FROM `cotizaciones` WHERE cotizaciones.fecha_Cotizacion = '$idfecha' AND cotizaciones.usuario = '$id_usuario'";
 //  print_r($Coti);
     // trae las consultas he hechas ese dia
