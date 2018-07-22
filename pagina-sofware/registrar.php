@@ -75,7 +75,7 @@
                         <span id='errorSexo' class='error'>Seleccion su genero</span> -->
                         
                             <strong>
-                                <input type="submit" value="Registrar" style="width: 150px; height:38px" class="btn btn botoniniciar">
+                                <input type="submit" value="Registrar" style="width: 60%; height:38px" class="btn btn botoniniciar">
                             </strong>
                             <br>
                             <br>
@@ -84,16 +84,24 @@
                         Registrarse&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></center> -->
                             <br>
                         </form>
+                        <div style='width:100%; height:auto;'>
+                            <button type='buttom' class="botoniniciar" onclick="redirect()" style='width:60%; height:38px;'>Regresar</button>
+                        </div>
                     </fieldset>
                 </div>
             </center>
-            <div style="display: flex;justify-content: center;align-items: center;">
+            <!-- <div style="display: flex;justify-content: center;align-items: center;">
                 <button type="button" class=" botonregresar" style="width: 100px;height: 30px;outline: 0px;" ><i class="fa fa-arrow-left"></i></button>
-            </div>
+            </div> -->
 
             <script src="js/jquery-3.3.1.min.js"></script>
             <script src="js/bootstrap.min.js"></script>
             <!-- <script src="js/validacion-login.js"></script> -->
+            <script>
+                function redirect() {
+                    window.location.replace("home.php");
+                }
+            </script>
 </body>
 
 </html>

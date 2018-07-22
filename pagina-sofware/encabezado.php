@@ -80,10 +80,14 @@
                                         <li class='nav-item'>
                                           <a class='scrollable' href='productos.php'>Productos</a>
                                         </li>
+                                        
 
                                         <li class='nav-item'>
                                           <a class='scrollable' href='cotizaciones.php'>Cotizaciones</a>
                                         </li>
+                                        <li class='nav-item'>
+                                        <a class='scrollable' href='contactanos.php'>Contactanos</a>
+                                    </li>
 
                                       ";
                                     }
@@ -93,14 +97,16 @@
                                  }
                                 ?>
                            
-                           <li class="nav-item">
-                                    <a class="scrollable" href="contactanos.php">Contactanos</a>
-                                </li>
+                           <!-- <li class='nav-item'>
+                                    <a class='scrollable' href='contactanos.php'>Contactanos</a>
+                                </li> -->
                            
                                 <li class="nav-item" style="font-size: 10px;">
                                 <?php if(isset($_SESSION['user'])){
                               // $_SESSION['user'] = $_POST['user'];
                                     echo "
+                                    
+
                                     <form action='cerrar-sesion.php' method='post'>
                                     <a class='page-scroll nav-item-custom '> 
                                       <input class='page-scroll input-custom logOut' type='submit' value='Cerrar Sesion'>
@@ -108,8 +114,14 @@
                                   </form>
                                   ";
                                  }else{
-                                    echo "<a class='navbar-brand page-scroll logistic-brand-logo' href='login.html' style:'height: 58px;'>Iniciar Sesión</a>";
-                                 }
+                                    echo "
+                                    <li class='nav-item'>
+                                    <a class='scrollable' href='contactanos.php'>Contactanos</a>
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='navbar-brand page-scroll logistic-brand-logo' href='login.html' style:'height: 58px;'>Iniciar Sesión</a>
+                                    </li>";
+                                  }
                                 ?>
                                 </li>
                       </ul>
