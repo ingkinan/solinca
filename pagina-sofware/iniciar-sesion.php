@@ -92,11 +92,13 @@
         while (($fila=mysqli_fetch_array($queryBuscar))){
             $userbd = $fila['username'];
             $passbd = $fila['pass'];
+            $id = $fila['id_usuario'];
             if($user === $userbd){
                 
                 if($pass == $passbd){
                     $_SESSION['user'] = $user;
                     $_SESSION['permisos'] = $fila['permiso'];
+                    $_SESSION['id'] = $id;
                     header("Location: home.php");
                 } else {
                    echo "  <div class='container'>
