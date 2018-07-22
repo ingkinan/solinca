@@ -106,7 +106,7 @@ if($cantidad === 0){
   $queryUpdate = $mysqli->query("UPDATE `usuarios` SET `pass` = '$pass' WHERE `usuarios`.`id_usuario` = $id");
   echo "  <div class='container'>
   <div class='error-container'>
-    <h1>La Contraseña se a Modificado Exitosamente</h1>
+    <h1>La Contraseña se ha Modificado Exitosamente</h1>
     <a href='home.php'>Volver a la página principal</a>
   </div>
 </div>";

@@ -69,61 +69,72 @@
                 producción Compruebe nuestro gran stock de repuestos</label>
             </div>
        </div>
+    <form action="cotizar.php" method="post">
        <div class="row product" id="filaProductos">
            <div class="col-12" style="width: 100vw; height: 70vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
                <div class="col img-product" style="display: flex;flex-wrap: wrap;justify-content: space-evenly;">
                     <div style="display: flex; flex-direction: column; justify-content: center; align-items: center">
                         <div style="display: flex; flex-direction: row">
-                            <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" name="cantLavadoras" id="cantLavadoras"> * 300$c/u
+                            <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" 
+                            onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" 
+                            name="cantLavadoras" id="cantLavadoras"> * 300$c/u
                         </div>
                         <img src="imagenes/LAVADORAS.jpg" alt="Solinca" style="">
                     </div>
                     <div style="display: flex; flex-direction: column; justify-content: center; align-items: center">
                         <div style="display: flex; flex-direction: row">
-                            <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" name="cantEtiq" id="cantEtiq"> * 150$c/u
+                            <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" 
+                            onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" 
+                            name="cantEtiq" id="cantEtiq"> * 150$c/u
                         </div>
                         <img src="imagenes/ETIQUETADORAS.jpg" alt="Solinca"  id='etiqueta' data-toggle="modal" style="padding-left:10px;">
                     </div>
                     <div style="display: flex; flex-direction: column; justify-content: center; align-items: center">
                         <div style="display: flex; flex-direction: row">
-                            <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" name="cantLlenadoras" id="cantLlenadoras"> * 200$c/u
+                            <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" 
+                            onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" 
+                            name="cantLlenadoras" id="cantLlenadoras"> * 200$c/u
                         </div>
                         <img src="imagenes/LLENADORAS.jpg" alt="Solinca" id='llenadoras' data-toggle="modal" style="padding-left:10px;">
                     </div>
                     <div style="display: flex; flex-direction: column; justify-content: center; align-items: center">
                         <div style="display: flex; flex-direction: row">
-                            <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" name="cantPast" id="cantPast"> * 160$c/u
+                            <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" 
+                            onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" 
+                            name="cantPast" id="cantPast"> * 160$c/u
                         </div>
                         <img src="imagenes/PASTEURIZADORAS.jpg" alt="Solinca" id='pasteurizadoras' data-toggle="modal" style="padding-left:10px;">
                     </div>
                     <div style="display: flex; flex-direction: column; justify-content: center; align-items: center">
                         <img src="imagenes/Portada-Accesorios-de-Líneas.jpg" alt="Solinca" id='portada' data-toggle="modal" style="padding-top:20px;">
                         <div style="display: flex; flex-direction: row">
-                            <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" name="cantAcLi" id="cantAcLi"> * 500$c/u
+                            <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" 
+                            onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" 
+                            name="cantAcLi" id="cantAcLi"> * 500$c/u
                         </div>
                     </div>
                     <div style="display: flex; flex-direction: column; justify-content: center; align-items: center">
                         <img src="imagenes/TRANSPORTE.jpg" alt="Solinca" id='transporte' data-toggle="modal" style="padding-top:20px;padding-left:10px;">
                         <div style="display: flex; flex-direction: row">
-                            <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" name="cantTrans" id="cantTrans"> * 450$c/u
+                            <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" 
+                            onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" 
+                            name="cantTrans" id="cantTrans"> * 450$c/u
                         </div>
                     </div>
                     <div style="display: flex; flex-direction: column; justify-content: center; align-items: center">
                         <img src="imagenes/Embaladores.jpg" alt="Solinca"  id='embaladores' data-toggle="modal" style="padding-top:20px; padding-left:10px;">
                         <div style="display: flex; flex-direction: row">
-                            <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" name="cantEmbaladores" id="cantEmbaladores"> * 700$c/u
+                            <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" 
+                            onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" 
+                            name="cantEmbaladores" id="cantEmbaladores"> * 700$c/u
                         </div>
-                    </div>
-                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center">
-                        <button onclick="getDatos()">Agregar</button>
                     </div>
                </div>
            </div>
        </div>
        <div id="form" style="display: none">
-           
-            <form action="" method="post">
-                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+           <div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+                <!-- <form action="cotizar.php" method="post"> -->
                     <table>
                         <tr>
                             <th>
@@ -133,7 +144,7 @@
                                 Cantidad
                             </th>
                             <th>
-                                Total
+                                Total Pago
                             </th>
                         </tr>
                         <tr>
@@ -141,10 +152,10 @@
                                 Lavadoras
                             </td>
                             <td>
-                                <input type="text" disabled id="lavTotal">
+                                <input type="text" disabled id="lavTotal" name="lavTotal">
                             </td>
                             <td>
-                            <input type="text" disabled id="lavTotalPago">
+                                <input type="text" disabled id="lavTotalPago" name="lavTotalPago">
                             </td>
                         </tr>
                         <tr>
@@ -152,10 +163,10 @@
                                 Etiquetadoras
                             </td>
                             <td>
-                                <input type="text" disabled id="etTotal">
+                                <input type="text" disabled id="etTotal" name="etTotal">
                             </td>
                             <td>
-                                <input type="text" disabled id="etTotalPago">
+                                <input type="text" disabled id="etTotalPago" name="etTotalPago">
                             </td>
                         </tr>
                         <tr>
@@ -163,10 +174,10 @@
                                 Llenadoras
                             </td>
                             <td>
-                                <input type="text" disabled id="lleTotal">
+                                <input type="text" disabled  value=0 id="lleTotal" name="lleTotal">
                             </td>
                             <td>
-                                <input type="text" disabled id="lleTotalPago">
+                                <input type="text" disabled id="lleTotalPago" name="lleTotalPago">
                             </td>
                         </tr>
                         <tr>
@@ -174,10 +185,10 @@
                                 Pasteurizadoras
                             </td>
                             <td>
-                                <input type="text" disabled id="pastTotal">
+                                <input type="text" disabled id="pastTotal" name="pastTotal">
                             </td>
                             <td>
-                                <input type="text" disabled id="pastTotalPago">
+                                <input type="text" disabled id="pastTotalPago" name="pastTotalPago">
                             </td>
                         </tr>
                         <tr>
@@ -185,10 +196,10 @@
                                 Acc. de Lineas
                             </td>
                             <td>
-                                <input type="text" disabled id="accTotal">
+                                <input type="text" disabled id="accTotal" name="accTotal">
                             </td>
                             <td>
-                                <input type="text" disabled id="accTotalPago">
+                                <input type="text" disabled id="accTotalPago" name="accTotalPago">
                             </td>
                         </tr>
                         <tr>
@@ -196,10 +207,10 @@
                                 Vías de Transporte
                             </td>
                             <td>
-                                <input type="text" disabled id="transTotal">
+                                <input type="text" disabled id="transTotal" name="transTotal">
                             </td>
                             <td>
-                                <input type="text" disabled id="transTotalPago">
+                                <input type="text" disabled id="transTotalPago" name="transTotalPago">
                             </td>
                         </tr>
                         <tr>
@@ -207,28 +218,36 @@
                                 Embaladores
                             </td>
                             <td>
-                                <input type="text" disabled id="embTotal">
+                                <input type="text" disabled id="embTotal" name="embTotal">
                             </td>
                             <td>
-                                <input type="text" disabled id="embTotalPago">
+                                <input type="text" disabled id="embTotalPago" name="embTotalPago">
                             </td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
                             <td>
-                                <input type="text" disabled id="TOTAL">
+                                TOTALES:
+                            </td>
+                            <td>
+                                <input type="text" disabled id="totalCant" name="totalCant">
+                            </td>
+                            <td>
+                                <input type="text" disabled id="totalPago" name="totalPago">
                             </td>
                         </tr>
                     </table>
                     <br>
                     <input type="submit" value="Cotizar">
+                    <br>
                 </div>
-                <br>
-            </form>
-            <div style="display: flex; justify-content: center; align-items: center; flex-direction: row">
-                <button onclick="regresar()">Modificar</button>
+                <div style="display: flex; justify-content: center; align-items: center; flex-direction: row">
+                    <button onclick="regresar()">Modificar</button>
+                </div>
             </div>
+        </form>
+        
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center" id="boton">
+            <button onclick="getDatos()">Agregar</button>
         </div>
     </body>
 
@@ -241,7 +260,8 @@
             $("#etTotal").val(etiquetadoras);
             $("#etTotalPago").val(etiquetadoras*150);
             let llenadoras = $("#cantLlenadoras").val();
-            $("#lleTotal").val(llenadoras);
+            console.log(document.getElementById("lleTotal"));
+            document.getElementById("lleTotal").setAttribute('value',llenadoras);
             $("#lleTotalPago").val(llenadoras*200);
             let pasteurizadoras = $("#cantPast").val();
             $("#pastTotal").val(pasteurizadoras);
@@ -255,8 +275,10 @@
             let embaladores = $("#cantEmbaladores").val();
             $("#embTotal").val(embaladores);
             $("#embTotalPago").val(embaladores*700);
-            $("#TOTAL").val((lavadoras*300)+(etiquetadoras*150)+(llenadoras*200)+(pasteurizadoras*160)+(acceLinea*500)+(transporte*450)+(embaladores*700));
+            $("#totalPago").val((lavadoras*300)+(etiquetadoras*150)+(llenadoras*200)+(pasteurizadoras*160)+(acceLinea*500)+(transporte*450)+(embaladores*700));
+            $("#totalCant").val((lavadoras*1)+(etiquetadoras*1)+(llenadoras*1)+(pasteurizadoras*1)+(acceLinea*1)+(transporte*1)+(embaladores*1));
             $("#filaProductos").hide();
+            $("#boton").hide();
             $("#form").show();
             console.log("Lavadoras => ", lavadoras);
             console.log("etiquetadoras => ", etiquetadoras);
@@ -270,6 +292,7 @@
         function regresar(){
             $("#filaProductos").show();
             $("#form").hide();
+            $("#boton").show();
         }
 
         function comprueba(valor){
