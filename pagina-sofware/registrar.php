@@ -90,9 +90,9 @@
                     </fieldset>
                 </div>
             </center>
-            <div style="display: flex;justify-content: center;align-items: center;">
+            <!-- <div style="display: flex;justify-content: center;align-items: center;">
                 <button type="button" class=" botonregresar" style="width: 100px;height: 30px;outline: 0px;" ><i class="fa fa-arrow-left"></i></button>
-            </div>
+            </div> -->
 
             <script src="js/jquery-3.3.1.min.js"></script>
             <script src="js/bootstrap.min.js"></script>
