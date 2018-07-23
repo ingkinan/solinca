@@ -24,6 +24,7 @@
         include_once("encabezado.php");
     ?>
 <body>
+<!-- <form action="send.php" method="post"> -->
 <form action="send.php" method="post">
     <div class="row" style='width:100vw; height:100vh; background: #ccc;'>
         <!-- <div class="col-12" style='width:100%; height:100%;'> -->
@@ -36,22 +37,22 @@
                     <div class="col-6" style='width: 40%;height: 100%;'>
                         <div style='width: 100%;'>
                             <!-- <label>Nombre: </label> -->
-                            <input type="text" name='nombre' placeholder='Nombre' class='input-contact' id="nombre completo"size="30" maxlength="100">
+                            <input type="text" name='nombre' placeholder='Nombre' class='input-contact' id="nombre completo"size="30" maxlength="100" required>
                         </div>
                         <br>
                         <div style='width: 100%;'>
                             <!-- <label>Apellido: </label> -->
-                            <input type="text" name='apellido' placeholder='Apellido' class='input-contact' id="apellido completo"size="30" maxlength="100">
+                            <input type="text" name='apellido' placeholder='Apellido' class='input-contact' id="apellido completo"size="30" maxlength="100" required>
                         </div>
                         <br>
                         <div style='width: 100%;'>
                             <!-- <label>Correo: </label> -->
-                            <input type="email" name='correo' placeholder='Correo' class='input-contact' onBlur="MM_validateForm('email','','NisEmail');return document.MM_returnValue" size="25" maxlength="100">
+                            <input type="email" name='correo' placeholder='Correo' class='input-contact' onBlur="MM_validateForm('email','','NisEmail');return document.MM_returnValue" size="25" maxlength="100" required>
                         </div>
                         <br>
                         <div style='width: 100%; display: flex;'>
                             <!-- <label>Mensaje: </label> -->
-                            <textarea name="mensaje" class='textArea-contact' onBlur="MM_validateForm('mensaje','','R');return document.MM_returnValue" size="20" maxlength="60" placeholder='Mensaje' cols="30" rows="10" ></textarea>
+                            <textarea name="mensaje" class='textArea-contact' onBlur="MM_validateForm('mensaje','','R');return document.MM_returnValue" size="20" maxlength="60" placeholder='Mensaje' cols="30" rows="10" required></textarea>
                         </div>
                         <br>
                         <div style='width: 100%;'>
