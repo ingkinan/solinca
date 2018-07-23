@@ -121,37 +121,45 @@
         //$pdf->Cell(0,5,'',0,1);
         //is equivalent to:
         
-        $pdf->SetFont('Arial','B',11);
         
         $pdf->SetFillColor(255,255,255);
         $pdf->SetDrawColor(255,255,255);
         $pdf->Ln(12);
-        $pdf->Cell(150,10,'',1,0,'', true);
-        $pdf->SetFillColor(180,180,255);
-        $pdf->SetDrawColor(180,180,255);
-        $pdf->Cell(28,10,'Cotizacion #: ',1,0,'', true);
-        $pdf->Cell(10,10,$numCot,1,0,'', true);
+        $pdf->SetFont('Arial','B',16);
+        $pdf->Cell(140,10,'SOLUCIONES INDUSTRIALES C.A.',1,0,'C', true);
+        $pdf->SetFont('Arial','',16);
+        $pdf->SetFillColor(41, 128, 185);
+        $pdf->SetDrawColor(41, 128, 185);
+        $pdf->SetTextColor(255, 255, 255);
+        $pdf->Cell(36,10,'Cotizacion # ',1,0,'', true);
+        $pdf->SetFillColor(255,255,255);
+        $pdf->SetDrawColor(255,255,255);
+        $pdf->SetTextColor(231, 76, 60);
+        $pdf->Cell(20,10,$numCot,1,0,'', true);
+        $pdf->SetFillColor(41, 128, 185);
+        $pdf->SetDrawColor(41, 128, 185);
+        $pdf->SetTextColor(255, 255, 255);
         $pdf->Ln(15);
-        $pdf->Cell(25.5,5,'Usuario: ',1,0,'',true);
+        $pdf->Cell(45.5,5,'Cliente/Usuario: ',1,0,'',true);
         $pdf->Cell(30.5,5, $userName ,1,0,'',true);
-        $pdf->Ln(5);
+        $pdf->Ln(7);
         $pdf->Cell(47,5,'Item',1,0,'',true);
         $pdf->Cell(47,5,'Producto',1,0,'',true);
         $pdf->Cell(47,5,'Cantidad',1,0,'',true);
         $pdf->Cell(47,5,'Total',1,0,'',true);
+        $pdf->SetTextColor(0, 0, 0);
         if($lavadoras > 0){
-            $pdf->Ln(7);
-            $pdf->SetFont('Arial','B',11);
+            $pdf->Ln(5);
+            $pdf->SetFont('Arial','',11);
             $pdf->Cell(47,5, $cont,1,0);
             $pdf->Cell(47,5, 'Lavadoras',1,0);
             $pdf->Cell(47,5, $lavadoras,1,0);
             $pdf->Cell(47,5, $costoLav,1,0);
-            $pdf->Ln(7);
+            $pdf->Ln(5);
             $cont = $cont+1;
         }
         if($etiquetadoras > 0){
-            $pdf->Ln(7);
-            $pdf->SetFont('Arial','B',11);
+            $pdf->SetFont('Arial','',11);
             $pdf->Cell(47,5, $cont,1,0);
             $pdf->Cell(47,5, 'Etiquetadoras',1,0);
             $pdf->Cell(47,5, $etiquetadoras,1,0);
@@ -160,8 +168,7 @@
             $cont = $cont+1;
         }
         if($llenadoras > 0){
-            $pdf->Ln(7);
-            $pdf->SetFont('Arial','B',11);
+            $pdf->SetFont('Arial','',11);
             $pdf->Cell(47,5, $cont,1,0);
             $pdf->Cell(47,5, 'Llenadoras',1,0);
             $pdf->Cell(47,5, $llenadoras,1,0);
@@ -170,8 +177,7 @@
             $cont = $cont+1;
         }
         if($pasteurizadoras > 0){
-            $pdf->Ln(7);
-            $pdf->SetFont('Arial','B',11);
+            $pdf->SetFont('Arial','',11);
             $pdf->Cell(47,5, $cont,1,0);
             $pdf->Cell(47,5, 'Pasteurizadoras',1,0);
             $pdf->Cell(47,5, $pasteurizadoras,1,0);
@@ -180,8 +186,7 @@
             $cont = $cont+1;
         }
         if($lineas > 0){
-            $pdf->Ln(7);
-            $pdf->SetFont('Arial','B',11);
+            $pdf->SetFont('Arial','',11);
             $pdf->Cell(47,5, $cont,1,0);
             $pdf->Cell(47,5, 'Acc. de Lineas',1,0);
             $pdf->Cell(47,5, $lineas,1,0);
@@ -190,8 +195,7 @@
             $cont = $cont+1;
         }
         if($transporte > 0){
-            $pdf->Ln(7);
-            $pdf->SetFont('Arial','B',11);
+            $pdf->SetFont('Arial','',11);
             $pdf->Cell(47,5, $cont,1,0);
             $pdf->Cell(47,5, 'Vias de Transporte',1,0);
             $pdf->Cell(47,5, $transporte,1,0);
@@ -200,8 +204,7 @@
             $cont = $cont+1;
         }
         if($ensambladores > 0){
-            $pdf->Ln(7);
-            $pdf->SetFont('Arial','B',11);
+            $pdf->SetFont('Arial','',11);
             $pdf->Cell(47,5, $cont,1,0);
             $pdf->Cell(47,5, 'Emb. y Desemb.',1,0);
             $pdf->Cell(47,5, $ensambladores,1,0);
@@ -209,13 +212,11 @@
             $pdf->Ln(7);
             $cont = $cont+1;
         }
-        $pdf->Ln(7);
         $pdf->SetFont('Arial','B',11);
         $pdf->Cell(94,5, 'Total',1,0);
         // $pdf->Cell(47,5, '',1,0);
         $pdf->Cell(47,5, $cantidades,1,0);
         $pdf->Cell(47,5, $costoTotal,1,0);
-        $pdf->Ln(7);
         ob_end_clean();
         $pdf->OutPut();
     }
