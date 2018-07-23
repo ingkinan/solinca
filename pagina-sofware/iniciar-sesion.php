@@ -122,13 +122,12 @@
         //     }
         // }
        
-        //     echo "  <div class='container'>
-        //     <div class='error-container'>
-        //       <h1>ERROR DE CONSULTA</h1>
-        //       <h3>El usuario no existe</h3>
-        //       <a href='login.html'>Volver a la página principal</a>
-        //     </div>
-        //   </div>";
+        echo "  <div class='container'>
+        <div class='error-container'>
+          <h1><br> Usuario Invalido</h1><br><br>
+          <a href='login.html'>Volver a la página principal</a>
+        </div>
+      </div>";
         
     ?>
 </body>
