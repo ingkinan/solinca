@@ -28,14 +28,15 @@
                         <!-- <p>Iniciar Sesión</p> -->
                         <form action="registro.php" method="post" style=" display: flex !important; text-align: center;
                         justify-content: center; flex-direction:column;">
-                            <div class="logo-login">
+                            <div class="logo-login" style="margin-bottom: 10px;">
                                 <img src="imagenes/solinca-logo-160.png" alt="">
                             </div>
+                            <br>
                             <div class="row input-login" style: "display:flex !important;text-align: center;justify-content: center;">
                                 <img class="border ic" src="imagenes/user.png" style="width: 28px;border: 1px solid;
                                 height: 28px; border-radius: 6px 0px 0px 6px;">
                                 <input type="text" name="user" placeholder="&nbsp;&nbsp;Usuario" style="width: 50%;height: 38px;border-radius: 0px 6px 6px 0px;
-                                border: none;font-size: 12px;letter-spacing: 2px;" required>
+                                border: none;font-size: 12px;letter-spacing: 2px;outline: 0px;padding-left: 5px;" required>
 
                             </div>
                             <br>
@@ -43,30 +44,30 @@
                                 <img class="border ic" src="imagenes/cont.png" style="width: 28px;border: 1px solid;
                                 height: 28px; border-radius: 6px 0px 0px 6px;">
                                 <input type="password" name="pass" placeholder="&nbsp;&nbsp;Contraseña" style="width: 50%;height: 38px;border-radius:0px 6px 6px 0px;
-                                border: none;font-size: 12px;letter-spacing: 2px;" required>
+                                border: none;font-size: 12px;letter-spacing: 2px;outline: 0px;padding-left: 5px;" required>
                             </div>
                             <br>
                             <div class="row input-login" style: "display: flex !important;text-align: center;justify-content: center;">
                                     <img class="border ic" src="imagenes/cont.png" style="width: 28px;border: 1px solid;
                                     height: 28px; border-radius: 6px 0px 0px 6px;">
                                     <input type="password" name="pass2" placeholder="&nbsp;&nbsp;Repetir Contraseña" style="width: 50%;height: 38px;border-radius:0px 6px 6px 0px;
-                                    border: none;font-size: 12px;letter-spacing: 2px;" required>
-                                </div>
-                                <br>
-                                <div class="row input-login" style: "display: flex !important;text-align: center;justify-content: center;">
-                                        <img class="border ic" src="imagenes/cont.png" style="width: 28px;border: 1px solid;
-                                        height: 28px; border-radius: 6px 0px 0px 6px;">
-                                        <input type="text" name="correo" placeholder="&nbsp;&nbsp;Correo" style="width: 50%;height: 38px;border-radius:0px 6px 6px 0px;
-                                        border: none;font-size: 12px;letter-spacing: 2px;" required>
-                                    </div>
-                                    <br>
-                                    <div class="row input-login" style: "display: flex !important;text-align: center;justify-content: center;">
-                                            <img class="border ic" src="imagenes/cont.png" style="width: 28px;border: 1px solid;
-                                            height: 28px; border-radius: 6px 0px 0px 6px;">
-                                            <input type="number" name="telefono" placeholder="&nbsp;&nbsp;Numero de Telefono" style="width: 50%;height: 38px;border-radius:0px 6px 6px 0px;
-                                            border: none;font-size: 12px;letter-spacing: 2px;" required>
-                                        </div>
-                                        <br>
+                                    border: none;font-size: 12px;letter-spacing: 2px;outline: 0px;padding-left: 5px;" required>
+                            </div>
+                            <br>
+                            <div class="row input-login" style: "display: flex !important;text-align: center;justify-content: center;">
+                                <img class="border ic" src="imagenes/e-mail.png" style="width: 28px;border: 1px solid;
+                                height: 28px; border-radius: 6px 0px 0px 6px;">
+                                <input type="text" name="correo" placeholder="&nbsp;&nbsp;Correo" style="width: 50%;height: 38px;border-radius:0px 6px 6px 0px;
+                                border: none;font-size: 12px;letter-spacing: 2px;outline: 0px;padding-left: 5px;" required>
+                            </div>
+                            <br>
+                            <div class="row input-login" style: "display: flex !important;text-align: center;justify-content: center;">
+                                <img class="border ic" src="imagenes/telefono.png" style="width: 28px;border: 1px solid;
+                                height: 28px; border-radius: 6px 0px 0px 6px;">
+                                <input type="number" name="telefono" placeholder="&nbsp;&nbsp;Numero de Telefono" style="width: 50%;height: 38px;border-radius:0px 6px 6px 0px;
+                                border: none;font-size: 12px;letter-spacing: 2px;outline: 0px;padding-left: 5px;" required>
+                            </div>
+                            <br>
                                         <!-- <br>
 
                                         <b>Tipo de Usuario: </b> -->
@@ -75,17 +76,15 @@
                         <span id='errorSexo' class='error'>Seleccion su genero</span> -->
                         
                             <strong>
-                                <input type="submit" value="Registrar" style="width: 60%; height:38px" class="btn btn botoniniciar">
+                                <input type="submit" value="Registrar" style="width: 60%; height:38px;outline: 0px;" class="btn btn botoniniciar">
                             </strong>
-                            <br>
-                            <br>
                             <!-- <center><a class="reguistro" href="#"style="width: 300px; height:40px">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         Registrarse&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></center> -->
                             <br>
                         </form>
                         <div style='width:100%; height:auto;'>
-                            <button type='buttom' class="botoniniciar" onclick="redirect()" style='width:60%; height:38px;'>Regresar</button>
+                            <button type='buttom' class="botoniniciar" onclick="redirect()" style='width:60%; height:38px;outline: 0px;;outline: 0px;'>Regresar</button>
                         </div>
                     </fieldset>
                 </div>

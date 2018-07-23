@@ -28,7 +28,7 @@
       background-color: #b5d1d4;
     }
 
-    .container{
+   .container{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -38,13 +38,17 @@
 
     .error-container{
       min-width: 300px;
-      width: 40%;
-      height: 250px;
-      background-color: rgb(22, 26, 64);
+      width: 50%;
+      height: 360px;
+      background-color: rgba(0, 0, 0, 0.47);
       display: flex;
       justify-content: center;
       border-radius: 5px;
       flex-direction: column;
+      letter-spacing: 2px;
+      font-size: 15px;
+      padding: 5px;
+      outline: 0px;
     }
 
     .error-container h1{
@@ -52,7 +56,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: white;
+      color: #fff;
       font-family: inherit;
       margin: 0;
     }
@@ -61,18 +65,30 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: white;
+      color: #fff;
       font-family: inherit;
     }
 
     .error-container a{
+      width: 100%;
+      height: 20%;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: white;
+      color: #fff;
       font-family: inherit;
-    }
+      text-decoration: none;
+    } 
+    .error-container a:hover{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #ccc;
+      font-family: inherit;
+      text-decoration: none;
+    } 
 </style>
 </head>
 <body>
