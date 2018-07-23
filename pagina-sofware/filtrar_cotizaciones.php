@@ -5,8 +5,12 @@
     $conn = new mysqli("localhost","root","","web");
 
     $idfecha = $_REQUEST['idfecha'];
- 
- $Coti = "SELECT * FROM `cotizaciones` WHERE cotizaciones.fecha_Cotizacion = '$idfecha'";
+    $id_usuario = $_SESSION['id'];
+    if($_SESSION['permisos'] == 1){
+        $Coti = "SELECT * FROM `cotizaciones` WHERE cotizaciones.fecha_Cotizacion = '$idfecha'";
+    } else {
+        $Coti = "SELECT * FROM `cotizaciones` WHERE cotizaciones.fecha_Cotizacion = '$idfecha' AND cotizaciones.usuario = '$id_usuario'";
+    }
 //  print_r($Coti);
     // trae las consultas he hechas ese dia
 // $CDF = "SELECT citas.citas_id as 'Numero de cita', citas.nombre_paciente as 'Nombre del paciente', 
