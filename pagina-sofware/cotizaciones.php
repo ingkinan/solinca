@@ -33,9 +33,9 @@
                         <h2 style='font-size: 20px;padding: 10px;'>Consulta de Cotizaciones</h2>
                     </div>
                     <br><br>
-                <form action="" >
+                <form action="" style='width: 100%;height: auto;padding-top: 0px;'>
                     <div class="col-6" style='width: 100%;height: 100%;'>
-                        <div style='width: 100%;'>
+                        <div style='width: 100%;display: flex;justify-content: center;align-items: center;'>
                             <!-- <label>Nombre: </label> -->
                             <input type="Date" name='fechacotizacion' id="Fechacotizacion" placeholder='Fecha de la Cotización' class='input-contact' id="nombre completo"size="30" maxlength="100">
                         </div>
@@ -56,9 +56,10 @@
                             <th>Numero Cotizacion</th>
                             <th>Fecha Cotizacion</th>
                             <th>Usuario</th>
-                            <th>Monto Total</th>  
+                            <th>Monto Total</th> 
                         </tr>
                         </thead>
+                        
                         <tbody id='data'>
                         </tbody>
                     </table>

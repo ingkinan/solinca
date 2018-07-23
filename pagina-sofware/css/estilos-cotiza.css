@@ -1,5 +1,5 @@
 .input-contact {
-    width: 100%;
+    width: 140px;
     height: 35px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -8,21 +8,46 @@
 }
 
 .btn-info {
+    width: 140px !important;
+    height: 38px !important;
     color: #fff;
     background-color: #2a807a !important;
-    border-color: #269abc !important;
+    border-color: #319992 !important;
 }
 
 .btn-info:hover {
     color: #fff;
     background-color: #319992 !important;
-    border-color: #269abc;
+    border-color: #2a807a;
     outline: 0px !important;
 }
 
-.btn-info:active:hover, .btn-info.active:hover, .open > .dropdown-toggle.btn-info:hover, .btn-info:active:focus, .btn-info.active:focus, .open > .dropdown-toggle.btn-info:focus, .btn-info:active.focus, .btn-info.active.focus, .open > .dropdown-toggle.btn-info.focus {
+.btn-info:active:hover,
+.btn-info.active:hover,
+.open>.dropdown-toggle.btn-info:hover,
+.btn-info:active:focus,
+.btn-info.active:focus,
+.open>.dropdown-toggle.btn-info:focus,
+.btn-info:active.focus,
+.btn-info.active.focus,
+.open>.dropdown-toggle.btn-info.focus {
     color: #fff;
     background-color: #269abc !important;
     border-color: #2a807a;
     outline: 0px !important;
+}
+
+td,
+th {
+    color: #b3b3b3 !important;
+    font-size: 13px !important;
+    letter-spacing: 2px !important;
+    padding: 15px !important;
+}
+
+tbody {
+    width: 100%;
+    height: 100%;
+    background: #fffdfd26;
+    border: 1px solid #ccc;
 }

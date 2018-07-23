@@ -28,7 +28,7 @@
                         <!-- <p>Iniciar Sesión</p> -->
                         <form action="registro.php" method="post" style=" display: flex !important; text-align: center;
                         justify-content: center; flex-direction:column;">
-                            <div class="logo-login" style="margin-bottom: 10px;">
+                            <div class="logo-login">
                                 <img src="imagenes/solinca-logo-160.png" alt="">
                             </div>
                             <br>
@@ -76,7 +76,7 @@
                         <span id='errorSexo' class='error'>Seleccion su genero</span> -->
                         
                             <strong>
-                                <input type="submit" value="Registrar" style="width: 60%; height:38px;outline: 0px;" class="btn btn botoniniciar">
+                                <input type="submit" value="Registrar" style="width: 58%; height:38px;outline: 0px;" class="btn btn botoniniciar">
                             </strong>
                             <!-- <center><a class="reguistro" href="#"style="width: 300px; height:40px">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -84,7 +84,7 @@
                             <br>
                         </form>
                         <div style='width:100%; height:auto;'>
-                            <button type='buttom' class="botoniniciar" onclick="redirect()" style='width:60%; height:38px;outline: 0px;;outline: 0px;'>Regresar</button>
+                            <button type='buttom' class="botoniniciar" onclick="redirect()" style='width:58%; height:38px;outline: 0px;;outline: 0px;'>Regresar</button>
                         </div>
                     </fieldset>
                 </div>
