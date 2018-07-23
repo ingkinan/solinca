@@ -73,7 +73,7 @@
            </div>
                 <div class="row product" id="filaProductos">
                     <div class="col-12" style="width: 100vw; height: 70vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-                        <div class="col img-product" style="display: flex;flex-wrap: wrap;justify-content: space-evenly;color: #fff;">
+                        <div class="col img-product" style="display: flex;flex-wrap: wrap;justify-content: space-evenly;color: #fff;font-size: 13px;letter-spacing: 1px;">
                                 <div style="display: flex; flex-direction: column; justify-content: center; align-items: center">
                                     <div style="width: 100%;display: flex; flex-direction: row">
                                         <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" 
@@ -108,7 +108,7 @@
                                 </div>
                                 <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                     <img src="imagenes/Portada-Accesorios-de-Líneas.jpg" alt="Solinca" id='portada' data-toggle="modal" style="padding-top:20px; padding-left:18px;">
-                                    <div style="width: 100%;display: flex; flex-direction: row">
+                                    <div style="width: 100%;display: flex; flex-direction: row;padding-left:18px;">
                                         <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" 
                                         onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" 
                                         name="cantAcLi" id="cantAcLi"> * 500$c/u
@@ -116,7 +116,7 @@
                                 </div>
                                 <div style="display: flex; flex-direction: column; justify-content: center; align-items: center">
                                     <img src="imagenes/TRANSPORTE.jpg" alt="Solinca" id='transporte' data-toggle="modal" style="padding-top:20px;padding-left:10px;">
-                                    <div style="style="width: 100%;display: flex; flex-direction: row">
+                                    <div style="width: 100%;display: flex; flex-direction: row;padding-left:10px;">
                                         <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" 
                                         onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" 
                                         name="cantTrans" id="cantTrans"> * 450$c/u
@@ -124,7 +124,7 @@
                                 </div>
                                 <div style="display: flex; flex-direction: column; justify-content: center; align-items: center">
                                     <img src="imagenes/Embaladores.jpg" alt="Solinca"  id='embaladores' data-toggle="modal" style="padding-top:20px; padding-left:10px;">
-                                    <div style="width: 100%;display: flex; flex-direction: row">
+                                    <div style="width: 100%;display: flex; flex-direction: row;padding-left:10px;">
                                         <input class="cantidadesInput" type="number" value=0 min="0" pattern="[0-9]+" 
                                         onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" 
                                         name="cantEmbaladores" id="cantEmbaladores"> * 700$c/u
