@@ -3,11 +3,10 @@
     session_start();
     // include_once("conexion.php");
     $conn = new mysqli("localhost","root","","web");
-    $id_usuario = $_SESSION['id'];
 
     $idfecha = $_REQUEST['idfecha'];
  
- $Coti = "SELECT * FROM `cotizaciones` WHERE cotizaciones.fecha_Cotizacion = '$idfecha' AND cotizaciones.usuario = '$id_usuario'";
+ $Coti = "SELECT * FROM `cotizaciones` WHERE cotizaciones.fecha_Cotizacion = '$idfecha'";
 //  print_r($Coti);
     // trae las consultas he hechas ese dia
 // $CDF = "SELECT citas.citas_id as 'Numero de cita', citas.nombre_paciente as 'Nombre del paciente', 
@@ -30,9 +29,15 @@
     $vector = array();
 	$i = 0;
 	while ($rs = mysqli_fetch_array($query)) {
+        $id = $rs['usuario'];
+        $consUsu = "SELECT * FROM usuarios WHERE usuarios.id_usuario = $id";
+        $query2 = $conn->query($consUsu);
+
+        $rs2 = mysqli_fetch_array($query2);
+
 		$vector[$i]['numero_Cotizacion'] = $rs["numero_Cotizacion"];
 		$vector[$i]['fecha_Cotizacion'] = $rs["fecha_Cotizacion"];
-		$vector[$i]['usuario'] = $rs["usuario"];
+		$vector[$i]['usuario'] = $rs2["username"];
 		$vector[$i]['monto_Cotizacion'] = $rs["monto_Cotizacion"];
 		$i = $i+1;
     } 
