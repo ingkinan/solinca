@@ -148,6 +148,7 @@
         $pdf->Cell(47,5,'Cantidad',1,0,'',true);
         $pdf->Cell(47,5,'Total',1,0,'',true);
         $pdf->SetTextColor(0, 0, 0);
+        $pdf->Ln(5);
         if($lavadoras > 0){
             $pdf->Ln(5);
             $pdf->SetFont('Arial','',11);
