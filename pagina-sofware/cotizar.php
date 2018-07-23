@@ -164,7 +164,7 @@
             $pdf->Cell(47,5, 'Etiquetadoras',1,0);
             $pdf->Cell(47,5, $etiquetadoras,1,0);
             $pdf->Cell(47,5, $costoEt,1,0);
-            $pdf->Ln(7);
+            $pdf->Ln(5);
             $cont = $cont+1;
         }
         if($llenadoras > 0){
@@ -173,7 +173,7 @@
             $pdf->Cell(47,5, 'Llenadoras',1,0);
             $pdf->Cell(47,5, $llenadoras,1,0);
             $pdf->Cell(47,5, $costoLle,1,0);
-            $pdf->Ln(7);
+            $pdf->Ln(5);
             $cont = $cont+1;
         }
         if($pasteurizadoras > 0){
@@ -182,7 +182,7 @@
             $pdf->Cell(47,5, 'Pasteurizadoras',1,0);
             $pdf->Cell(47,5, $pasteurizadoras,1,0);
             $pdf->Cell(47,5, $costoPast,1,0);
-            $pdf->Ln(7);
+            $pdf->Ln(5);
             $cont = $cont+1;
         }
         if($lineas > 0){
@@ -191,7 +191,7 @@
             $pdf->Cell(47,5, 'Acc. de Lineas',1,0);
             $pdf->Cell(47,5, $lineas,1,0);
             $pdf->Cell(47,5, $costoLi,1,0);
-            $pdf->Ln(7);
+            $pdf->Ln(5);
             $cont = $cont+1;
         }
         if($transporte > 0){
@@ -200,7 +200,7 @@
             $pdf->Cell(47,5, 'Vias de Transporte',1,0);
             $pdf->Cell(47,5, $transporte,1,0);
             $pdf->Cell(47,5, $costoTrans,1,0);
-            $pdf->Ln(7);
+            $pdf->Ln(5);
             $cont = $cont+1;
         }
         if($ensambladores > 0){
@@ -209,14 +209,17 @@
             $pdf->Cell(47,5, 'Emb. y Desemb.',1,0);
             $pdf->Cell(47,5, $ensambladores,1,0);
             $pdf->Cell(47,5, $costoEnsam,1,0);
-            $pdf->Ln(7);
+            $pdf->Ln(5);
             $cont = $cont+1;
         }
-        $pdf->SetFont('Arial','B',11);
-        $pdf->Cell(94,5, 'Total',1,0);
-        // $pdf->Cell(47,5, '',1,0);
-        $pdf->Cell(47,5, $cantidades,1,0);
-        $pdf->Cell(47,5, $costoTotal,1,0);
+        if($cont > 1){
+            $pdf->Ln(7);
+            $pdf->SetFont('Arial','B',11);
+            $pdf->Cell(94,5, 'Total',1,0);
+            // $pdf->Cell(47,5, '',1,0);
+            $pdf->Cell(47,5, $cantidades,1,0);
+            $pdf->Cell(47,5, $costoTotal,1,0);
+        }
         ob_end_clean();
         $pdf->OutPut();
     }
